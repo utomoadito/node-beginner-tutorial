@@ -65,6 +65,9 @@ app.post('/post',(req, res) => {
     name : req.body.textname
   });
 });
+
+// REST API Routes
+app.use('/api', require('./routes/api'));
  
 app.listen(port, host, () => {
   console.log('Server is running at port 8000');

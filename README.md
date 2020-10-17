@@ -22,9 +22,6 @@ $ npm install -g sequelize-cli
 # run all migrations for create table
 $ sequelize db:migrate
 
-# run all migrations for create table
-$ sequelize db:migrate
-
 # run seeders for insert dummy data into table
 $ sequelize db:seed:all
 
