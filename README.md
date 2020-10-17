@@ -1,13 +1,34 @@
 # node-beginner-tutorial
 Learn First Node 
 
-Gunakan `npm install` untuk install modul node secara keseluruhan
+> This is simple Node.js project for learning the basic code, or learning to use popular dependencies provided as needed
 
-Atau ikuti beberapa langkah dibawah :
+## Build Setup
 
-1. Install Express Framework : `npm install express`
-2. Install Template Engine HBS : `npm install hbs`
-3. Install Body Parser sebagai Middleware untuk menghandle POST request Body : `npm install body-parser`
-4. Jika sudah, jalankan `node app.js` pada terminal, kemudian ketik `http://localhost:8000/` pada search bar browser (link bisa disesuaikan sesuai route pada app.js)
+```bash
+# install dependencies
+Use `npm install` for install all dependencies
 
-Sumber : (http://mfikri.com/artikel/tutorial-nodejs)
+# serve with hot reload at localhost:8000
+$ npm run dev
+```
+
+This project using Sequelize v5 as ORM. So before start please follow these steps:
+
+```bash
+# install Sequelize CLI (if you don't have)
+$ npm install -g sequelize-cli
+
+# run all migrations for create table
+$ sequelize db:migrate
+
+# run seeders for insert dummy data into table
+$ sequelize db:seed:all
+
+For more documentation, you can check this source: https://sequelize.org/v5/manual/migrations.html 
+```
+
+Source : 
+1. http://mfikri.com/artikel/tutorial-nodejs
+2. https://sequelize.org/v5/manual/migrations.html
+3. https://medium.com/@prajramesh93/getting-started-with-node-express-and-mysql-using-sequelize-ed1225afc3e0
