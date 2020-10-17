@@ -1,3 +1,4 @@
+require('dotenv').config();
 //use path module
 const path = require('path');
 //use express module
@@ -8,13 +9,20 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
 const app = express();
+const port = process.env.PORT;
+const host = process.env.HOST || 'localhost';
+const cors = require('cors');
+
+app.use(cors())
+app.set('port', port)
 
 //set dynamic views file
 app.set('views',path.join(__dirname,'views'));
 //set view engine
 app.set('view engine', 'hbs');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 //set public folder as static folder for static file (jadinya tidak perlu lagi define path folder public pada view)
 app.use(express.static('public'));
  
@@ -58,6 +66,6 @@ app.post('/post',(req, res) => {
   });
 });
  
-app.listen(8000, () => {
+app.listen(port, host, () => {
   console.log('Server is running at port 8000');
 });

@@ -11,14 +11,27 @@ Use `npm install` for install all dependencies
 
 # serve with hot reload at localhost:8000
 $ npm run dev
-
 ```
-Or you can follow this step :
 
-1. Install Express Framework : `npm install express`
-2. Install Template Engine HBS : `npm install hbs`
-3. Install Body Parser as Middleware for handle POST request Body : `npm install body-parser`
-4. Run `node app.js` on terminal, then access `http://localhost:8000/` on web browser
+This project using Sequelize v5 as ORM. So before start please follow these steps:
+
+```bash
+# install Sequelize CLI (if you don't have)
+$ npm install -g sequelize-cli
+
+# run all migrations for create table
+$ sequelize db:migrate
+
+# run all migrations for create table
+$ sequelize db:migrate
+
+# run seeders for insert dummy data into table
+$ sequelize db:seed:all
+
+For more documentation, you can check this source: https://sequelize.org/v5/manual/migrations.html 
+```
 
 Source : 
-1. (http://mfikri.com/artikel/tutorial-nodejs)
+1. http://mfikri.com/artikel/tutorial-nodejs
+2. https://sequelize.org/v5/manual/migrations.html
+3. https://medium.com/@prajramesh93/getting-started-with-node-express-and-mysql-using-sequelize-ed1225afc3e0
