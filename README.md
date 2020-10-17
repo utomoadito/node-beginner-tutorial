@@ -1,13 +1,24 @@
 # node-beginner-tutorial
 Learn First Node 
 
-Gunakan `npm install` untuk install modul node secara keseluruhan
+> This is simple Node.js project for learning the basic code, or learning to use popular dependencies provided as needed
 
-Atau ikuti beberapa langkah dibawah :
+## Build Setup
+
+```bash
+# install dependencies
+Use `npm install` for install all dependencies
+
+# serve with hot reload at localhost:8000
+$ npm run dev
+
+```
+Or you can follow this step :
 
 1. Install Express Framework : `npm install express`
 2. Install Template Engine HBS : `npm install hbs`
-3. Install Body Parser sebagai Middleware untuk menghandle POST request Body : `npm install body-parser`
-4. Jika sudah, jalankan `node app.js` pada terminal, kemudian ketik `http://localhost:8000/` pada search bar browser (link bisa disesuaikan sesuai route pada app.js)
+3. Install Body Parser as Middleware for handle POST request Body : `npm install body-parser`
+4. Run `node app.js` on terminal, then access `http://localhost:8000/` on web browser
 
-Sumber : (http://mfikri.com/artikel/tutorial-nodejs)
+Source : 
+1. (http://mfikri.com/artikel/tutorial-nodejs)

@@ -1,0 +1,36 @@
+{
+  "name": "node-beginner-tutorial",
+  "version": "1.0.0",
+  "description": "This is simple Node.js project for learning the basic code, or learning to use popular dependencies provided as needed",
+  "author": "utomoadito &lt;utomoadhitya@gmail.com&gt;",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js --watch server",
+    "start": "cross-env NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-validator": "^6.5.0",
+    "flag-icon-css": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
+}
